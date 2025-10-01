@@ -7,7 +7,11 @@
   <h1>Keagan Duemmel</h1>
   <p>Course: COP4813</p>
   <p>Major: Computer Science</p>
-  <h2>Welcome to my dynamic image webpage!</h2>
+  <h2>
+    Welcome to my dynamic image webpage!
+    <br>
+    <img id="time-image" src="" alt="Time of day image">
+  </h2>
   
   <script>
     let hour = new Date().getHours();
@@ -17,19 +21,19 @@
     if (hour >= 6 && hour < 12) {
     document.body.style.backgroundColor = "lightyellow";
     img.src = "https://picsum.photos/seed/morning/800/400";
-    img.alt = "Morning sunrise scene";
+    img.alt = "Morning sunrise";
     } else if (hour >= 12 && hour < 18) {
     document.body.style.backgroundColor = "lightblue";
     img.src = "https://picsum.photos/seed/afternoon/800/400";
-    img.alt = "Afternoon sunshine scene";
+    img.alt = "Afternoon sunshine";
     } else if (hour >= 18 && hour < 21) {
     document.body.style.backgroundColor = "orange";
     img.src = "https://picsum.photos/seed/evening/800/400";
-    img.alt = "Evening sunset scene";
+    img.alt = "Evening sunset";
     } else {
     document.body.style.backgroundColor = "darkblue";
     img.src = "https://picsum.photos/seed/night/800/400";
-    img.alt = "Night sky with stars";
+    img.alt = "Night sky";
     }
   </script>
 </body>
