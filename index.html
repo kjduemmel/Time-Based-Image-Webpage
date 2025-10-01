@@ -7,11 +7,8 @@
   <h1>Keagan Duemmel</h1>
   <p>Course: COP4813</p>
   <p>Major: Computer Science</p>
-  <h2>
-    Welcome to my dynamic image webpage!
-    <br>
-    <img id="time-image" src="" alt="Time of day image">
-  </h2>
+  <h2>Welcome to my dynamic image webpage!</h2>
+  <img id="time-image" src="" alt="Time of day image">
   
   <script>
     let hour = new Date().getHours();
@@ -20,19 +17,19 @@
     
     if (hour >= 6 && hour < 12) {
     document.body.style.backgroundColor = "lightyellow";
-    img.src = "https://picsum.photos/seed/morning/800/400";
-    img.alt = "Morning sunrise";
+    img.src = "https://cdn.pixabay.com/photo/2025/08/02/08/13/sunrise-9750192_1280.jpg";
+    img.alt = "Morning sunrise with heron in pond";
     } else if (hour >= 12 && hour < 18) {
     document.body.style.backgroundColor = "lightblue";
-    img.src = "https://picsum.photos/seed/afternoon/800/400";
-    img.alt = "Afternoon sunshine";
+    img.src = "https://cdn.pixabay.com/photo/2022/08/12/18/11/clouds-7382221_1280.jpg";
+    img.alt = "Afternoon cloud";
     } else if (hour >= 18 && hour < 21) {
     document.body.style.backgroundColor = "orange";
-    img.src = "https://picsum.photos/seed/evening/800/400";
-    img.alt = "Evening sunset";
+    img.src = "https://cdn.pixabay.com/photo/2022/05/12/12/55/sunset-7191546_1280.jpg";
+    img.alt = "Evening sunset with boats";
     } else {
     document.body.style.backgroundColor = "darkblue";
-    img.src = "https://picsum.photos/seed/night/800/400";
+    img.src = "https://cdn.pixabay.com/photo/2016/11/29/12/22/stars-1869447_1280.jpg";
     img.alt = "Night sky";
     }
   </script>
